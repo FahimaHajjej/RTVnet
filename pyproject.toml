@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "rtvnet"
+version = "0.2.1"
+description = "Reliability-guided trend-variation learning for plant electrical signals"
+requires-python = ">=3.10"
+dynamic = ["dependencies"]
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+[tool.setuptools.packages.find]
+where = ["src"]
